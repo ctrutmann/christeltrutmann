@@ -24,17 +24,42 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Christel Trutmann",
+  "@type": "ProfilePage",
   "url": "https://christeltrutmann.com/",
-  "jobTitle": "Writer; MSW candidate",
-  "alumniOf": [{"@type":"CollegeOrUniversity","name":"Cornell University"},{"@type":"CollegeOrUniversity","name":"University at Albany, SUNY"}],
-  "knowsAbout": ["sexual ethics","consent","gender and language","social work"],
-  "sameAs": [
-    "https://www.linkedin.com/in/christel-trutmann/",
-    "https://medium.com/@ctrutmann",
-    "https://repaperpress.com/"
-  ]
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://christeltrutmann.com/headshot.jpg",
+    "width": 1200,
+    "height": 1200
+  },
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Christel Trutmann",
+    "url": "https://christeltrutmann.com/",
+    "jobTitle": "Writer; Researcher; MSW candidate",
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Cornell University"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University at Albany, SUNY"
+      }
+    ],
+    "knowsAbout": [
+      "sexual ethics",
+      "consent",
+      "gender and language",
+      "social work"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/christel-trutmann/",
+      "https://medium.com/@ctrutmann",
+      "https://repaperpress.com/"
+    ],
+    "image": "https://christeltrutmann.com/headshot.jpg"
+  }
 }
 </script>
 <style>
@@ -99,7 +124,7 @@ footer{padding:36px 0 60px;font-size:14px;color:var(--muted);border-top:1px soli
 </div>
 
 <div class="intro">
-  <img class="photo" src="headshot.jpg" alt="Christel Trutmann">
+  <img class="photo" src="headshot.jpg" width="1200" height="1200" alt="Christel Trutmann">
   <div>
     <h1>Christel Trutmann</h1>
     <p class="role">Writer · Researcher · MSW candidate</p>
