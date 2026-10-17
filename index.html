@@ -73,6 +73,10 @@ h2{font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:600;co
 .item p,.card p{margin-top:6px}
 .about p+p{margin-top:16px}
 .links{display:flex;flex-wrap:wrap;gap:12px 28px}
+.words{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:520px;margin-top:20px;padding:20px 26px;background:var(--tile);border:1px solid var(--rule);border-radius:4px}
+.words h4{font-size:14px;font-weight:600;color:var(--muted);margin-bottom:6px}
+.words ol{list-style:none;font-size:17px;line-height:1.6}
+figcaption{font-size:14px;color:var(--muted);margin-top:10px;max-width:520px}
 footer{padding:36px 0 60px;font-size:14px;color:var(--muted);border-top:1px solid var(--rule)}
 @media (max-width:600px){
  body{font-size:18px}
@@ -81,6 +85,8 @@ footer{padding:36px 0 60px;font-size:14px;color:var(--muted);border-top:1px soli
  .photo{width:128px;height:128px}
  .card{grid-template-columns:1fr;gap:16px}
  h1{font-size:38px}
+ .words{gap:16px;padding:16px 18px}
+ .words h4{white-space:nowrap}
 }
 </style>
 </head>
@@ -89,7 +95,7 @@ footer{padding:36px 0 60px;font-size:14px;color:var(--muted);border-top:1px soli
 
 <div class="top">
   <a class="name" href="#">Christel Trutmann</a>
-  <nav><a href="#writing">Writing</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a><a href="Trutmann_CV.pdf" target="_blank" rel="noopener">CV</a></nav>
+  <nav><a href="#writing">Writing</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a><a href="Trutmann_CV.pdf" target="_blank" rel="noopener">CV</a></nav>
 </div>
 
 <div class="intro">
@@ -118,6 +124,25 @@ footer{padding:36px 0 60px;font-size:14px;color:var(--muted);border-top:1px soli
     <h3><a href="https://medium.com/@ctrutmann/he-said-she-said-the-rigged-language-of-sex-consent-and-rape-f97b40af0111" target="_blank" rel="noopener">“He Said, She Said”: The Rigged Language of Sex, Consent, and Rape</a></h3>
     <p>A series on the double standards built into our sexual vocabulary, and a proposal for a new, shared standard built on solicitude and consensus.</p>
     </div>
+  </div>
+</section>
+
+<section class="about" id="research">
+  <h2>Research</h2>
+  <p>I’m interested in how feeling accepted, or judged, by real and imagined audiences shapes mental health, social development, and moral behavior. In child sexual abuse prevention, anticipated judgment shapes whether victims disclose and whether bystanders and people at risk of offending seek help. In everyday sexual vocabulary, it shapes whose desire sounds normal and whose sounds suspect.</p>
+
+  <div class="item" style="margin-top:28px">
+    <div class="meta">Independent study · University at Albany · 2025</div>
+    <h3>NLP Analysis of Gendered Sexual Language</h3>
+    <p>Using Python and natural language processing to study patterns in gendered sexual language, building on writing I began in 2021.</p>
+    <p>The study grew out of a 2016 exploration. I trained a word2vec model on 75,000 IMDB movie reviews and asked which words reviewers use in the most similar contexts to “man” and “woman.” The differences were striking:</p>
+    <figure>
+      <div class="words">
+        <div><h4>Closest to “man”</h4><ol><li>woman</li><li>lady</li><li>lad</li><li>guy</li><li>millionaire</li><li>monk</li><li>sailor</li><li>soldier</li><li>men</li><li>person</li><li>farmer</li><li>chap</li></ol></div>
+        <div><h4>Closest to “woman”</h4><ol><li>lady</li><li>prostitute</li><li>girl</li><li>widow</li><li>man</li><li>heiress</li><li>housewife</li><li>waitress</li><li>nun</li><li>nurse</li><li>maid</li><li>whore</li></ol></div>
+      </div>
+      <figcaption>The 12 nearest words to each, in order of similarity. <a href="https://github.com/ctrutmann/kaggle_imdb_gender" target="_blank" rel="noopener">Code and notes on GitHub</a></figcaption>
+    </figure>
   </div>
 </section>
 
